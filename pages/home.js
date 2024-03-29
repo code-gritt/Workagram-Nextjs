@@ -33,7 +33,7 @@ const home = ({ providers }) => {
               <div key={provider.name}>
                 <div className="pl-4"> */}
             <button
-              className="text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5 transition-all hover:border-2"
+              className="text-amber-800/80 font-semibold rounded-full border border-amber-800/80 px-5 py-1.5 transition-all hover:border-2"
               onClick={() => signIn(provider.id, { callbackUrl: "/" })}
             >
               Sign in
@@ -49,15 +49,15 @@ const home = ({ providers }) => {
               Welcome to our professional community
             </h1>
             <div className="space-y-4">
-              <div className="intent">
+              <div className="intent transition ease-in-out">
                 <h2 className="text-xl">Search for a job</h2>
                 <ArrowForwardIosRoundedIcon className="text-gray-700" />
               </div>
-              <div className="intent">
+              <div className="intent transition ease-in-out">
                 <h2 className="text-xl">Find a person you know</h2>
                 <ArrowForwardIosRoundedIcon className="text-gray-700" />
               </div>
-              <div className="intent">
+              <div className="intent transition ease-in-out">
                 <h2 className="text-xl">Learn a new skill</h2>
                 <ArrowForwardIosRoundedIcon className="text-gray-700" />
               </div>
