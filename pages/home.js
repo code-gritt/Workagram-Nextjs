@@ -29,18 +29,18 @@ const home = ({ providers }) => {
               <HeaderLink Icon={BusinessCenterIcon} text="Jobs" />
             </div>
 
-            {/* {Object.values(providers).map((provider) => (
+            {Object.values(providers).map((provider) => (
               <div key={provider.name}>
-                <div className="pl-4"> */}
-            <button
-              className="text-amber-800/80 font-semibold rounded-full border border-amber-800/80 px-5 py-1.5 transition-all hover:border-2"
-              onClick={() => signIn(provider.id, { callbackUrl: "/" })}
-            >
-              Sign in
-            </button>
-            {/* </div>
+                <div className="pl-4">
+                  <button
+                    className="text-amber-800/80 font-semibold rounded-full border border-amber-800/80 px-5 py-1.5 transition-all hover:border-2"
+                    onClick={() => signIn(provider.id, { callbackUrl: "/" })}
+                  >
+                    Sign in
+                  </button>
+                </div>
               </div>
-            ))} */}
+            ))}
           </div>
         </header>
         <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
